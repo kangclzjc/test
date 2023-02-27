@@ -340,7 +340,7 @@ int main(int argc, char *argv[]) {
                 } else {
                     // random write file with random length
                     printf("fwrite random write with random length\n");
-srand(time(NULL));
+                    srand(time(NULL));
                     if (max_bs == 0 || min_bs == 0) {
                         perror("max_bs or min_bs must larger than 0");
                         return -1;
